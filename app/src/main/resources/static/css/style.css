@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+    padding: 0;
+  }
+
+  /* ======================================================================================
+                                        GLOBAL
+====================================================================================== */
+
+html {
+  font-size: 62.5%;
+}
+
+/** VARIABLES **/
+:root {
+  --primary-color: #0b6ab5;
+  --secondary-color: #21507c;
+  --tertiary-color: #b0dcff;
+  --font-size-s: 1.6rem;
+  --font-size-m: 2.4rem;
+  --font-size-sm: 1.8rem;
+  --font-size-l: 3.2rem;
+  --font-size-l: 5rem;
+}
+/* -- END -- */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--font-size-s);
+  line-height: 1.7;
+}
+
+h1 {
+  font-size:var(--font-size-l);
+}
+
+h2 {
+  font-size: var(--font-size-m);
+}
+
+h3 {
+  font-size: var(--font-size-sm);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* ------------------------------------ GLOBAL END ----------------------------------- */
+
+
+
+
+
+/* ======================================================================================
+                                        UTILITIES
+====================================================================================== */
+.container--m {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.flex-row--m{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column--m{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------------------------- UTILITIES END ---------------------------------- */
+
+
+
+
+
+/* ======================================================================================
+                                          HEADER
+====================================================================================== */
+.header__container{
+  gap: 5rem;
+}
+
+.header__logo{
+  height: 10vh;
+  position: relative;
+}
+
+.header__logo a{
+  min-width: 20rem;
+}
+
+.header__logo__img{
+  position: absolute;
+  width: 80%;
+  min-width: 30rem;
+}
+
+.header__nav{
+  background-color: var(--primary-color);
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.header__nav__list{
+  margin: 0;
+  justify-content: flex-end;
+  gap: 5rem;
+}
+
+.header__nav__item{
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+.dropdown-toggle{
+  margin: 0;
+}
+
+.dropdown-item{
+  font-size: var(--font-size-s);
+}
+
+.header__login{
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.header__login__icon{
+  display: block;
+  font-size: 1.8rem;
+}
+
+.header__login_btn{
+  background-color: transparent;
+  padding: 0.3rem 1rem;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+/* ------------------------------------ HEADER END ----------------------------------- */
+
+
+
+
+
+/* ======================================================================================
+                                          MAIN
+====================================================================================== */
+/* main__info */
+.main__container {
+  height: 85vh;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#5e849a 0.75px, #ffffff 0.75px);
+  background-size: 1.5rem 1.5rem;
+}
+
+.main__info{
+  flex-basis: 50%;
+  padding-left: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__info__title{
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.main__info__text{
+}
+
+.main__info__button{
+  margin-top: 4rem;
+  width: 10vw;
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  border-color: var(--secondary-color);
+  background-color: #fff;
+  color: var(--primary-color);
+  font-weight: 900;
+  transition: all 0.5s linear;
+}
+
+.main__info__button:hover{
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+  width: 13vw;
+  border-color: rgb(0, 0, 0);
+}
+
+.main__info__button:hover a{
+  color: #fff;
+}
+
+
+/* main__hero */
+.main__hero{
+  flex-basis: 50%;
+  justify-content: center;
+}
+
+.main__hero__img{
+  max-width: 100%;
+}
+/* -------------------------------------- MAIN END ------------------------------------ */
